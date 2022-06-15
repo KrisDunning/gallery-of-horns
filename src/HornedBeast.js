@@ -19,17 +19,7 @@ class HornedBeast extends React.Component{
   };
 
   render(){
-    return (        
-      // <article>
-      //   <h2>{this.props.title}</h2>
-      //   <div>
-      //     <p>❤️</p>
-      //     <p> Likes: {this.state.likes}</p>
-      //   </div>
-      // <Image src={this.props.image_url} alt={this.props.title} title={this.props.title} onClick={this.handleLikes} fluid rounded/> 
-      // <p>{this.props.desc}</p>
-      // </article>
-    
+    return (           
       <Card bg="info" style={{ width: '18rem'}}>
       <Card.Img variant="top" src={this.props.image_url} />
       <Card.Body>
