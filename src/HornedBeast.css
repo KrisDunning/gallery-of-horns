@@ -1,0 +1,15 @@
+img{
+  height:12rem;
+
+}
+
+.card{
+  margin: 25px 0px; 
+}
+.card-body{
+  justify-items: center;
+  align-items: center;
+}
+.card p{
+  margin:10px 0px;
+}
