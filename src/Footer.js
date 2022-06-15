@@ -3,10 +3,23 @@ import './Footer.css';
 
 class Footer extends React.Component {
 
+  constructor(props){
+    super(props);
+    this.state={
+      heart:''
+    };
+  };
+
+  handleOnClick=()=>{
+    this.setState({
+      heart:'❤️❤️❤️❤️❤️❤️❤️❤️❤️'
+    })
+  };
+
   render() {
    return (
-    <footer>
-      <p>Page brought to you by Kris Dunning</p>
+    <footer onClick={this.handleOnClick}>
+      <p>{this.state.heart}Page brought to you by Kris Dunning{this.state.heart}</p>
     </footer>
    )
   };
