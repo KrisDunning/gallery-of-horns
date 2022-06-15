@@ -31,8 +31,8 @@ Number and name of feature: ____Bootstrap____
 
 Estimate of time needed to complete: _1.5hrs__
 
-Start time: _____
+Start time: __4:26pm PST___
 
-Finish time: _____
+Finish time: __5:48pm PST___
 
-Actual time needed to complete: _____
+Actual time needed to complete: __1hr22min___
