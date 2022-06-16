@@ -36,3 +36,29 @@ Start time: __4:26pm PST___
 Finish time: __5:48pm PST___
 
 Actual time needed to complete: __1hr22min___
+
+-----
+
+Number and name of feature: ______Modal_________
+
+Estimate of time needed to complete: __1.5hrs___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+-----
+
+Number and name of feature: ______Fuzzy Search_________
+
+Estimate of time needed to complete: __2.5hrs___
+
+Start time: _____
+
+Finish time: _____
+
+Actual time needed to complete: _____
+
+-----
