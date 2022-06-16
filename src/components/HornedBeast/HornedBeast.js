@@ -1,6 +1,5 @@
 import React from "react";
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
 import Card from 'react-bootstrap/Card'
 import './HornedBeast.css';
 
@@ -18,10 +17,14 @@ class HornedBeast extends React.Component{
     })
   };
 
+  handleModalOpenClick=()=>{
+    this.props.openModal(this.props.title,this.props.image_url,this.props.desc);
+  }
+
   render(){
     return (           
       <Card bg="info" style={{ width: '18rem'}}>
-      <Card.Img variant="top" src={this.props.image_url} />
+      <Card.Img onClick={this.handleModalOpenClick} variant="top" src={this.props.image_url} />
       <Card.Body>
         <Card.Title>{this.props.title}</Card.Title>
         <Card.Text>
