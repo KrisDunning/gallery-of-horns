@@ -13,6 +13,7 @@ constructor(props){
   this.state={
     showModal:false,
     beastobj:{},
+    filterBy:'1',
   };
 };
 
@@ -30,6 +31,14 @@ handleOnShowModal=(beast)=>{
   });
 };
 
+handleOnFilter=(filter)=>{
+  console.log("handleonFilter: "+filter);
+  this.setState({
+    filterby:filter,
+  })
+};
+
+
   render() {
     return (
       <>
@@ -38,10 +47,13 @@ handleOnShowModal=(beast)=>{
         onHide={this.handleOnHide}
         beastobj={this.state.beastobj}
         />
-        <Header/>
+        <Header 
+        handleOnFilter={this.handleOnFilter}
+        />
         <Main
         openModal={this.handleOnShowModal} 
         data={data}
+        filterBy={this.state.filterBy}
         />
         <Footer/>
       </>
