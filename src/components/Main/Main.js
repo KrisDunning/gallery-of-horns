@@ -8,13 +8,11 @@ class Main extends React.Component {
 
   render() {
     let beastArray = [];
-    beastArray = this.props.data.map((beast, idx) => {
+    beastArray = this.props.data.map((beast) => {
       return <HornedBeast
-        title={beast.title}
-        image_url={beast.image_url}
-        desc={beast.description}
-        key={beast._id}
         openModal={this.props.openModal}
+        beastobj={beast}
+        key={beast._id}
       />
     });
 
