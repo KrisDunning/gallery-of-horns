@@ -18,20 +18,37 @@ class HornedBeast extends React.Component{
   };
 
   handleModalOpenClick=()=>{
-    this.props.openModal(this.props.title,this.props.image_url,this.props.desc);
+    this.props.openModal(this.props.beastobj);
   }
 
   render(){
     return (           
-      <Card bg="info" style={{ width: '18rem'}}>
-      <Card.Img onClick={this.handleModalOpenClick} variant="top" src={this.props.image_url} />
+      <Card 
+        bg="info"
+        style={{ width: '18rem'}}
+      >
+      <Card.Img
+        onClick={this.handleModalOpenClick}
+        variant="top"
+        src={this.props.beastobj.image_url}
+        alt={this.props.beastobj.description}
+      />
       <Card.Body>
-        <Card.Title>{this.props.title}</Card.Title>
+        <Card.Title>
+          {this.props.beastobj.title}
+        </Card.Title>
         <Card.Text>
-          {this.props.desc}
+          {this.props.beastobj.description}
         </Card.Text>
-        <Button variant="secondary" onClick={this.handleLikes}>UpBoop the Snoot</Button>
-        <p>❤️ {this.state.likes} UpBoop's </p>
+        <Button 
+          variant="secondary" 
+          onClick={this.handleLikes}
+        >
+          UpBoop the Snoot
+        </Button>
+        <p>
+          ❤️ {this.state.likes} UpBoop's
+        </p>
       </Card.Body>
     </Card>
       );

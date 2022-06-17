@@ -1,6 +1,7 @@
 import React from 'react';
 import './Modal.css'
 import Modal from 'react-bootstrap/Modal'
+import Image from 'react-bootstrap/Image'
 
 class SelectedBeast extends React.Component {
 
@@ -8,21 +9,17 @@ class SelectedBeast extends React.Component {
     return (             
         <Modal
           show={this.props.show}
-          onHide={() => this.props.onHide}
-          size="lg"
-          centered
-          // dialogClassName="modal-90w"
-          //style={{width:'100%'}}     
+          onHide={this.props.onHide}   
           >
           <Modal.Header closeButton>
             <Modal.Title>
-              {this.props.beastTitle}
+              {this.props.beastobj.title}
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img className='img-fluid' src={this.props.image_url} alt={this.props.title} />
+            <Image src={this.props.beastobj.image_url} alt={this.props.beastobj.title} />
             <p>
-              {this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}{this.props.desc}
+              {this.props.beastobj.description}
             </p>
           </Modal.Body>
         </Modal>      
