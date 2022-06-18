@@ -7,11 +7,16 @@ class HornedBeast extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      likes:0,
+      likes:0
     };
   };
 
   handleLikes=()=>{
+    if(this.state.likes<1){
+      this.setState({
+        likes:1
+      });
+    }
     this.setState({
       likes:this.state.likes +1
     })
