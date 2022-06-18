@@ -3,7 +3,7 @@ import data from './data.json';
 import Main from './components/Main/Main.js';
 import Header from './components/Header/Header.js';
 import Footer from './components/Footer/Footer.js';
-import SelectedBeast from 'react-bootstrap/Modal'
+import SelectedBeast from './components/Modal/Modal.js';
 import './App.css';
 
 
@@ -13,7 +13,7 @@ constructor(props){
   this.state={
     showModal:false,
     beastobj:{},
-    filterBy:'1',
+    filterBy:'all',
   };
 };
 
@@ -32,9 +32,8 @@ handleOnShowModal=(beast)=>{
 };
 
 handleOnFilter=(filter)=>{
-  console.log("handleonFilter: "+filter);
   this.setState({
-    filterby:filter,
+    filterBy:filter,
   })
 };
 
